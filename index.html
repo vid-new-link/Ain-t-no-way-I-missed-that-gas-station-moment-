@@ -1,0 +1,172 @@
+<!-- ===== CONTENT GATE WITH IMAGE ===== -->
+<style>
+#gateOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* FAKE PLAYER */
+.fake-player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.aceimg.com/34a0f671f.png') center/cover no-repeat;
+}
+
+.fake-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+}
+
+/* PLAY BUTTON */
+.fake-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.95);
+}
+.fake-play:after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-35%,-50%);
+  border-top:16px solid transparent;
+  border-bottom:16px solid transparent;
+  border-left:26px solid #000;
+}
+
+/* TEXT */
+.gate-text {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+/* FAKE PROGRESS */
+.progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(255,255,255,.25);
+}
+.bar {
+  width: 42%;
+  height: 100%;
+  background: #ff0000;
+}
+</style>
+
+<div id="gateOverlay" onclick="openContent()">
+  <div class="fake-player">
+    <div class="fake-overlay"></div>
+
+    <div class="fake-play"></div>
+
+    <div class="gate-text">
+      Tap to continue watching
+    </div>
+
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.body.style.overflow = "hidden";
+
+function openContent(){
+  document.getElementById("gateOverlay").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+</script>
+
+<!-- ===== KONTEN ASLI ===== -->
+
+<style>
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+
+<div class="video-wrapper">
+  <iframe
+    src="https://cdn.videy.co/3oPKGHsL1.mp4"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <a href="https://madbroadlydock.com/qt9xw7axu?key=21a5a572d4b9ebacebe26851ade16f64"
+     style="
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     background-color: #e50914;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+     padding: 16px 28px;
+     border-radius: 8px;
+     text-decoration: none;
+     box-shadow: 0 0 15px rgba(229,9,20,0.8);
+     animation: blink 1.5s infinite;">
+     ▶︎ Download Video
+  </a>
+</div>
+<div style="text-align: center; margin: 30px 0;">
+  <a href="https://madbroadlydock.com/qt9xw7axu?key=21a5a572d4b9ebacebe26851ade16f64"
+     style="
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     background-color: #e50914;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+     padding: 16px 28px;
+     border-radius: 8px;
+     text-decoration: none;
+     box-shadow: 0 0 15px rgba(229,9,20,0.8);
+     animation: blink 1.5s infinite;">
+     ▶︎ Watch Full Videos
+  </a>
+</div>
+
+<style>
+@keyframes blink {
+  0% {opacity:1;}
+  50% {opacity:0.6;}
+  100% {opacity:1;}
+}
+</style>
